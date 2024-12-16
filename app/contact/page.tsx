@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, ChangeEvent, FormEvent, JSX } from "react";
 import Head from "next/head";
 import emailjs from "emailjs-com";
 import { Button } from "../components/ui/button";
@@ -19,7 +19,13 @@ import {
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const info = [
+interface InfoItem {
+  icon: JSX.Element;
+  text: string;
+  description: string;
+}
+
+const info: InfoItem[] = [
   {
     icon: <FaPhoneAlt />,
     text: "Phone",
@@ -46,7 +52,7 @@ interface FormValues {
   message: string;
 }
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const [formValues, setFormValues] = useState<FormValues>({
     firstname: "",
     lastname: "",
