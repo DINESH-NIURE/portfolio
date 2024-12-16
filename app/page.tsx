@@ -22,11 +22,11 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Devloper</span>
             <h1 className="h1 mb-6">
-              Hello, I'm <br />{" "}
+              Hello, I&apos;m <br />{" "}
               <span className="text-accent"> Dinesh Niure</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Hey, I'm a passionate Full-Stack Web Developer with over 3 years
+              Hey, I&apos;m a passionate Full-Stack Web Developer with over 3 years
               of experience creating impactful web applications. I love learning
               new technologies and taking on exciting challenges.
             </p>
