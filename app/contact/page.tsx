@@ -109,6 +109,16 @@ const Contact: React.FC = () => {
           content="Contact us for more information about our services."
         />
         <meta name="keywords" content="contact, services, email, phone" />
+        <meta name="author" content="Dinesh Niure" />
+        <meta property="og:title" content="Contact Us - Your Company" />
+        <meta property="og:description" content="Contact us for more information about our services." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourwebsite.com/contact" />
+        <meta property="og:image" content="https://yourwebsite.com/assets/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us - Your Company" />
+        <meta name="twitter:description" content="Contact us for more information about our services." />
+        <meta name="twitter:image" content="https://yourwebsite.com/assets/twitter-image.jpg" />
       </Head>
       <motion.section
         initial={{ opacity: 0 }}

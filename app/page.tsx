@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import Social from "./components/Social";
 import Photo from "./components/Photo";
 import Stats from "./components/Stats";
+import Head from "next/head";
 
 const Home = () => {
   const download = () => {
@@ -15,49 +16,57 @@ const Home = () => {
     document.body.removeChild(link);
   };
   return (
-    <section className="h-full">
-      <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          {/* text */}
-          <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Devloper</span>
-            <h1 className="h1 mb-6">
-              Hello, I&apos;m <br />{" "}
-              <span className="text-accent"> Dinesh Niure</span>
-            </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              Hey, I&apos;m a passionate Full-Stack Web Developer with over 3 years
-              of experience creating impactful web applications. I love learning
-              new technologies and taking on exciting challenges.
-            </p>
-            <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                onClick={download}
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2 ">
-                <span>Download CV</span>
-                <FiDownload className="xl" />
-              </Button>
+    <>
+      <Head>
+        <title>Dinesh Niure - Full-Stack Web Developer</title>
+        <meta name="description" content="Dinesh Niure's portfolio. A passionate Full-Stack Web Developer with over 3 years of experience creating impactful web applications." />
+        <meta name="keywords" content="Dinesh Niure, Full-Stack Developer, Web Developer, Portfolio" />
+        <meta name="author" content="Dinesh Niure" />
+      </Head>
+      <section className="h-full">
+        <div className="container mx-auto h-full">
+          <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+            {/* text */}
+            <div className="text-center xl:text-left order-2 xl:order-none">
+              <span className="text-xl">Software Devloper</span>
+              <h1 className="h1 mb-6">
+                Hello, I&apos;m <br />{" "}
+                <span className="text-accent"> Dinesh Niure</span>
+              </h1>
+              <p className="max-w-[500px] mb-9 text-white/80">
+                Hey, I&apos;m a passionate Full-Stack Web Developer with over 3 years
+                of experience creating impactful web applications. I love learning
+                new technologies and taking on exciting challenges.
+              </p>
+              <div className="flex flex-col xl:flex-row items-center gap-8">
+                <Button
+                  onClick={download}
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2 ">
+                  <span>Download CV</span>
+                  <FiDownload className="xl" />
+                </Button>
 
-              <div className="mb-8 xl:mb-0">
-                <Social
-                  containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base 
-                hover:bg-accent
-                hover:text-primary hover:transition-all duration-500"
-                />
+                <div className="mb-8 xl:mb-0">
+                  <Social
+                    containerStyles="flex gap-6"
+                    iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base 
+                  hover:bg-accent
+                  hover:text-primary hover:transition-all duration-500"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          {/* photo */}
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            <Photo />
+            {/* photo */}
+            <div className="order-1 xl:order-none mb-8 xl:mb-0">
+              <Photo />
+            </div>
           </div>
         </div>
-      </div>
-      <Stats />
-    </section>
+        <Stats />
+      </section>
+    </>
   );
 };
 
