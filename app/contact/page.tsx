@@ -131,13 +131,13 @@ const Contact: React.FC = () => {
           },
         }}
         className="py-6">
-        <div className="container mx-auto">
-          <div className="flex flex-col xl:flex-row gap-[30px]">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col xl:flex-row gap-6 xl:gap-[30px]">
             {/* Form Section */}
             <div className="xl:h-[54%] order-2 xl:order-none">
               <form
                 onSubmit={sendEmail}
-                className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+                className="flex flex-col gap-6 p-6 md:p-10 bg-[#27272c] rounded-xl">
                 <h3 className="text-4xl text-accent">Let's work together</h3>
                 <p className="text-white/60">
                   I am available for freelance work. Connect with me via email
@@ -223,7 +223,7 @@ const Contact: React.FC = () => {
 
             {/* Info Section */}
             <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
-              <ul className="flex flex-col pr-28 gap-10">
+              <ul className="flex flex-col pr-0 xl:pr-28 gap-6 xl:gap-10">
                 {info.map((item, index) => (
                   <li key={index} className="flex items-center gap-6">
                     <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
