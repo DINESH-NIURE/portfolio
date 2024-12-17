@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { JetBrains_Mono } from "next/font/google";
@@ -29,10 +30,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={jetbrainsMono.variable}>
         <Header />
-        <PageTransition>
-          {children}
-          <SpeedInsights />
-        </PageTransition>
+        <PageTransition>{children}</PageTransition>
+        <SpeedInsights />
+        <Analytics />
         <Footer />
       </body>
     </html>
