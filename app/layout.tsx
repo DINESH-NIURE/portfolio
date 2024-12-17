@@ -27,10 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <SpeedInsights />
       <body className={jetbrainsMono.variable}>
         <Header />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          {children}
+          <SpeedInsights />
+        </PageTransition>
         <Footer />
       </body>
     </html>
