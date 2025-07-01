@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 const socials = [
   {
@@ -11,12 +11,12 @@ const socials = [
     path: "https://linkedin.com/in/dinesh-niure",
   },
   {
-    icon: <FaYoutube />,
-    path: "#",
-  },
-  {
     icon: <FaTwitter />,
     path: "https://x.com/dineshniure7",
+  },
+  {
+    icon: <FaEnvelope />,
+    path: "mailto:starkdinesh2@gmail.com",
   },
 ];
 

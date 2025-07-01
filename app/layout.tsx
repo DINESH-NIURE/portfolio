@@ -16,9 +16,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DINESH NIURE",
+  title: "Dinesh Niure - Full-Stack Developer",
   description:
-    "Hey, I am DINESH NIURE, a full-stack devloper with 2+ years of experience. I am passionate about building scalable and maintainable web applications.",
+    "Passionate Full-Stack Developer with expertise in modern web technologies. Specializing in React, Next.js, Node.js, and cloud technologies. Available for freelance projects and collaborations.",
+  keywords: ["Dinesh Niure", "Full-Stack Developer", "React", "Next.js", "Node.js", "Web Development", "Portfolio"],
+  authors: [{ name: "Dinesh Niure" }],
+  creator: "Dinesh Niure",
+  openGraph: {
+    title: "Dinesh Niure - Full-Stack Developer",
+    description: "Passionate Full-Stack Developer with expertise in modern web technologies.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

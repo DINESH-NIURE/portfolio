@@ -19,108 +19,55 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "../components/WorkSliderBtns";
-import Head from "next/head"; // Import Head for SEO
 
 const projects = [
   {
     num: "01",
-    title: "Tour App",
-    categrory: "Full-Stack",
+    title: "Cafe Nepali Accent Campaign",
+    category: "Digital Marketing",
     description:
-      "A comprehensive tour booking application built with Next.js 14, Tailwind CSS, Shadcn UI, and MongoDB. It offers a seamless user experience for booking and managing tours.",
+      "Managed a comprehensive digital marketing campaign to increase brand awareness and foot traffic. Developed and executed content strategy, managed social media channels, and ran targeted ad campaigns, resulting in a 40% increase in online engagement.",
     stack: [
-      {
-        name: "Next.js 14",
-      },
-      { name: "Tailwind CSS" },
-      { name: "Shadcn UI" },
-      { name: "MongoDB" },
+      { name: "Social Media Marketing" },
+      { name: "Content Creation" },
+      { name: "Meta Ads" },
+      { name: "Google Analytics" },
     ],
-    img: "/assets/work/tourapp.png",
-    live: "",
-    github: "https://github.com/dinesh-niure",
+    img: "/assets/work/thumb1.png",
+    live: "#",
+    github: "",
   },
   {
     num: "02",
-    title: "Shortify",
-    categrory: "Fullstack",
+    title: "GP Real Estate Lead Gen",
+    category: "Paid Advertising",
     description:
-      "A URL shortening service developed using React.js 18, Tailwind CSS, and Prisma. It provides users with the ability to shorten long URLs and track their usage.",
+      "Executed a targeted Meta Ads campaign for lead generation. Optimized ad creatives, audience targeting, and landing pages to achieve a 25% increase in qualified leads and a 15% reduction in cost-per-lead.",
     stack: [
-      {
-        name: "React Js 18",
-      },
-      { name: "Tailwind CSS" },
-      { name: "Prisma" },
+      { name: "Meta Ads" },
+      { name: "Lead Generation" },
+      { name: "Conversion Optimization" },
+      { name: "A/B Testing" },
     ],
-    img: "/assets/work/shortify.png",
-    live: "",
-    github: "https://github.com/dinesh-niure",
+    img: "/assets/work/thumb2.png",
+    live: "#",
+    github: "",
   },
   {
     num: "03",
-    title: "Evipann Marketing & AI",
-    categrory: "Frontend",
+    title: "Local Business SEO",
+    category: "SEO",
     description:
-      "A cutting-edge marketing and AI platform built with React JS 17, Tailwind CSS, and Aceternity UI, designed to enhance digital marketing strategies.",
+      "Improved search engine rankings for a local business through on-page, off-page, and technical SEO. Conducted keyword research, optimized website content, and built high-quality backlinks, leading to a 50% increase in organic traffic.",
     stack: [
-      {
-        name: "React JS 17",
-      },
-      { name: "Tailwind CSS" },
-      { name: "Aceternity UI" },
-    ],
-    img: "/assets/work/evipann.png",
-    live: "",
-    github: "https://github.com/dinesh-niure",
-  },
-  {
-    num: "04",
-    title: "Home Furniture",
-    categrory: "Frontend",
-    description:
-      "A modern home furniture website crafted with HTML 5, CSS 3, and JavaScript, offering a seamless and stylish shopping experience.",
-    stack: [
-      {
-        name: "HTML 5",
-      },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-    ],
-    img: "/assets/work/thumb1.png",
-    live: "",
-    github: "https://github.com/dinesh-niure",
-  },
-  {
-    num: "05",
-    title: "Home Decor",
-    categrory: "Fullstack",
-    description:
-      "A comprehensive home decor e-commerce platform developed with Next JS 13, Tailwind CSS, and Node JS, featuring a wide range of products.",
-    stack: [
-      { name: "Next JS 13" },
-      { name: "Tailwind CSS" },
-      { name: "Node JS" },
-    ],
-    img: "/assets/work/thumb2.png",
-    live: "",
-    github: "https://github.com/dinesh-niure",
-  },
-  {
-    num: "06",
-    title: "Portfolio",
-    categrory: "Frontend",
-    description:
-      "A personal portfolio website built with Next JS 13 and Tailwind CSS, showcasing projects and skills in a clean and professional layout.",
-    stack: [
-      {
-        name: "Next JS 13",
-      },
-      { name: "Tailwind CSS" },
+      { name: "On-Page SEO" },
+      { name: "Keyword Research" },
+      { name: "Google Search Console" },
+      { name: "Ahrefs" },
     ],
     img: "/assets/work/thumb3.png",
-    live: "",
-    github: "https://github.com/dinesh-niure",
+    live: "#",
+    github: "",
   },
 ];
 
@@ -132,21 +79,14 @@ const Work = () => {
     setProject(projects[currentSlide]);
   };
   return (
-    <>
-      <Head>
-        <title>Our Work | Dinesh Niure</title>
-        <meta name="description" content="Discover the projects and work done by Dinesh Niure, including full-stack and frontend development projects." />
-        <meta name="keywords" content="projects, work, full-stack development, frontend development, Dinesh Niure" />
-        <meta name="author" content="Dinesh Niure" />
-      </Head>
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-        }}
-        className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
-        <div className="container mx-auto">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
+      <div className="container mx-auto">
           <div className="flex flex-col xl:flex-row xl:gap-[30px] ">
             <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
               <div className="flex flex-col gap-[30px] h-[50%]">
@@ -155,10 +95,10 @@ const Work = () => {
                 </div>
 
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                  {project.categrory} Project
+                  {project.category}
                 </h2>
                 <p className="text-white/60">{project.description}</p>
-                <ul className="flex gap-4">
+                <ul className="flex gap-4 flex-wrap">
                   {project.stack.map((item, index) => {
                     return (
                       <li key={index} className=" text-xl text-accent">
@@ -173,27 +113,30 @@ const Work = () => {
                   <Link href={project.live}>
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5  flex justify-center items-center group">
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
                           <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>Live Projects</p>
+                          <p>Live Project</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
                   </Link>
-                  <Link href={project.github}>
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5  flex justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Github Repository</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
+
+                  {project.github && (
+                    <Link href={project.github}>
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                            <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Github Repository</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
@@ -232,7 +175,6 @@ const Work = () => {
           </div>
         </div>
       </motion.section>
-    </>
   );
 };
 export default Work;

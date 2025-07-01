@@ -2,12 +2,11 @@
 
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiPython } from "react-icons/si";
-import Head from 'next/head';
 
 const about = {
   title: "About Me",
   description:
-    "Hello! I'm Dinesh Niure, a passionate Full-Stack Web Developer with over 3 years of experience in creating impactful web applications. I excel in Web Development, SEO, Digital Marketing, and Graphics Design. My journey in the tech world has been fueled by a constant desire to learn and take on exciting challenges. I have honed my skills through various online courses and bootcamps, and I am always eager to expand my knowledge and expertise.",
+    "Strong knowledge in Digital Marketing with hands-on experience in Web Development, SEO, Google Ads, and Meta Ads. I help businesses grow their online presence, drive targeted traffic, and increase conversions. Well-versed in digital strategy, user behavior, and using the right tools to achieve measurable results.",
   info: [
     {
       fielName: "Name",
@@ -48,37 +47,17 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "With over 3 years of experience in the tech industry, I have worked on various projects that have honed my skills in web development, SEO, digital marketing, and graphics design. My professional journey includes working with startups, educational institutions, and digital marketing agencies, where I have contributed to building impactful web applications and effective digital strategies.",
+    "With a proven track record in digital marketing and web development, I have successfully managed campaigns and content for various businesses, driving growth and engagement.",
   items: [
     {
-      company: "eVipann",
-      position: "Full Stack Developer",
-      date: "2022 - Present",
+      company: "Cafe Nepali Accent",
+      position: "Digital Marketing & Content Manager",
+      date: "Oct 2024 - Present",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      date: "2022 - 2023",
-    },
-    {
-      company: "Tech Academy",
-      position: "Freelance Web Developer",
-      date: "2022 - 2023",
-    },
-    {
-      company: "Digital Marketing Agency",
-      position: "Freelance Web Developer",
-      date: "2023 - Present",
-    },
-    {
-      company: "Tech Academy",
-      position: "Freelance Web Developer",
-      date: "2022 - 2023",
-    },
-    {
-      company: "Digital Marketing Agency",
-      position: "Freelance Web Developer",
-      date: "2023 - Present",
+      company: "GP Real Estate",
+      position: "Meta Ads & Campaign Specialist",
+      date: "Feb 2024 - Jan 2025",
     },
   ],
 };
@@ -87,27 +66,12 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "I have pursued various online courses and bootcamps to enhance my skills in web development. My educational journey includes a Full Stack Web Development Bootcamp, a Front-End Track (React) from Codecademy, and several programming courses. These experiences have equipped me with the knowledge and expertise to excel in the tech industry.",
+    "I am currently pursuing a Bachelor of Science in Computer Science and Information Technology, which provides a strong technical foundation for my work in web development and digital marketing.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      date: "2023",
-    },
-    {
-      institution: "Codecademy",
-      degree: "Front-End Track (React)",
-      date: "2022",
-    },
-    {
-      institution: "Online Course",
-      degree: "Programming Course",
-      date: "2021 - 2023",
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      date: "2021",
+      institution: "Patan Multiple Campus, Lalitpur",
+      degree: "Bachelor of Science in Computer Science and Information Technology (BSc. CSIT)",
+      date: "2022 – Ongoing",
     },
   ],
 };
@@ -115,39 +79,54 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "I possess a diverse set of skills in web development, including proficiency in HTML, CSS, JavaScript, React, Node.js, Tailwind CSS, Next.js, and Python. My expertise extends to SEO, Digital Marketing, and Graphics Design, allowing me to create comprehensive and effective web solutions.",
+    "I possess a versatile skill set that combines technical expertise in web development with strategic knowledge in digital marketing, allowing me to deliver comprehensive solutions.",
+  skillList: [
+    {
+      title: "Web Development",
+      items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Responsive Design", "UI/UX Optimization", "Website Speed Optimization"]
+    },
+    {
+      title: "Paid Advertising",
+      items: ["Google Ads (Search, Display, Video)", "Meta Ads (Facebook & Instagram)", "A/B Testing", "Conversion Optimization", "Audience Targeting"]
+    },
+    {
+      title: "Social Media Marketing",
+      items: ["Content Planning & Scheduling", "Community Engagement", "Hashtag Research", "Post Boosting"]
+    },
+    {
+      title: "Email Marketing",
+      items: ["Email Campaign Setup (Mailchimp, ConvertKit)", "Lead Generation", "List Segmentation", "Automation & A/B Testing"]
+    },
+    {
+      title: "Search Engine Optimization (SEO)",
+      items: ["On-Page & Off-Page SEO", "Keyword Research", "Technical SEO", "Google Search Console", "Ahrefs/SEMRush"]
+    },
+    {
+      title: "Analytics & Reporting",
+      items: ["Google Analytics & GA4", "UTM Tracking", "Data Studio Reporting", "Funnel Analysis"]
+    },
+    {
+      title: "Other Tools & Platforms",
+      items: ["Canva", "Figma", "ChatGPT", "Trello", "Notion", "Basic Video Editing (CapCut, Davinci Resolve)"]
+    },
+  ],
+};
+
+const awards = {
+  icon: "/assets/resume/badge.svg",
+  title: "My Awards",
+  description:
+    "I have been recognized for my dedication and performance in the digital marketing field.",
   items: [
     {
-      title: "HTML5",
-      icon: <FaHtml5 />,
+      title: "Dedicated Employee Award",
+      source: "Cafe Nepali Accent",
+      date: "2025",
     },
     {
-      title: "CSS3",
-      icon: <FaCss3 />,
-    },
-    {
-      title: "JavaScript",
-      icon: <FaJs />,
-    },
-    {
-      title: "React",
-      icon: <FaReact />,
-    },
-    {
-      title: "NodeJs",
-      icon: <FaNodeJs />,
-    },
-    {
-      title: "Tailwind CSS",
-      icon: <SiTailwindcss />,
-    },
-    {
-      title: "NextJs",
-      icon: <SiNextdotjs />,
-    },
-    {
-      title: "Python",
-      icon: <SiPython />,
+      title: "Top Campaign Performance",
+      source: "GP Real Estate",
+      date: "2024",
     },
   ],
 };
@@ -171,19 +150,12 @@ import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
-    <>
-      <Head>
-        <title>Dinesh Niure - Resume</title>
-        <meta name="description" content="Dinesh Niure's resume showcasing his experience, education, skills, and about me section. A passionate Full-Stack Web Developer with over 3 years of experience." />
-        <meta name="keywords" content="Dinesh Niure, Full-Stack Web Developer, Resume, Web Development, SEO, Digital Marketing, Graphics Design" />
-        <meta name="author" content="Dinesh Niure" />
-      </Head>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-        }}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
         className="min-h-[80vh] flex flex-center justify-center py-12 xl:p-8">
         <div className="container mx-auto">
           <Tabs
@@ -193,6 +165,7 @@ const Resume = () => {
               <TabsTrigger value="experience"> Experience</TabsTrigger>
               <TabsTrigger value="education"> Education</TabsTrigger>
               <TabsTrigger value="skills"> Skills</TabsTrigger>
+              <TabsTrigger value="awards"> Awards</TabsTrigger>
               <TabsTrigger value="about"> About me</TabsTrigger>
             </TabsList>
 
@@ -217,6 +190,35 @@ const Resume = () => {
                             <div className="flex items-center gap-3">
                               <span className=" w-[6px] h-[6px] rounded-full bg-accent"></span>
                               <p className="text-white/60">{item.company}</p>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </ScrollArea>
+                </div>
+              </TabsContent>
+
+              <TabsContent value="awards" className="w-full">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                  <h3 className=" text-4xl font-bold">{awards.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                    {awards.description}
+                  </p>
+                  <ScrollArea className="h-[400px]">
+                    <ul className=" grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
+                      {awards.items.map((item, index) => {
+                        return (
+                          <li
+                            key={index}
+                            className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                            <span className="text-accent ">{item.date}</span>
+                            <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                              {item.title}
+                            </h3>
+                            <div className="flex items-center gap-3">
+                              <span className=" w-[6px] h-[6px] rounded-full bg-accent"></span>
+                              <p className="text-white/60">{item.source}</p>
                             </div>
                           </li>
                         );
@@ -263,26 +265,27 @@ const Resume = () => {
                       {skills.description}
                     </p>
 
-                    <ul className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px] ">
-                      {skills.items.map((item, index) => {
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-[30px]">
+                      {skills.skillList.map((skillCategory, index) => {
                         return (
-                          <li key={index} className="">
-                            <TooltipProvider delayDuration={100}>
-                              <Tooltip>
-                                <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                  <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                    {item.icon}
-                                  </div>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                  <p className="capitalize">{item.title}</p>
-                                </TooltipContent>
-                              </Tooltip>
-                            </TooltipProvider>
-                          </li>
+                          <div key={index} className="flex flex-col gap-4">
+                            <h4 className="text-2xl font-semibold text-center xl:text-left">
+                              {skillCategory.title}
+                            </h4>
+                            <ul className="flex flex-col gap-2">
+                              {skillCategory.items.map((item, idx) => {
+                                return (
+                                  <li key={idx} className="flex items-center gap-2">
+                                    <span className="text-accent">•</span>
+                                    <p className="text-white/60">{item}</p>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
                         );
                       })}
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </TabsContent>
@@ -313,7 +316,6 @@ const Resume = () => {
           </Tabs>
         </div>
       </motion.div>
-    </>
   );
 };
 export default Resume;
